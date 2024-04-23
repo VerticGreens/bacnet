@@ -22,7 +22,6 @@ import {
   SetBacnetValueObjectValue,
 } from "./types";
 
-
 export type receiverString = string;
 export type receiverObject = {
   address: string;

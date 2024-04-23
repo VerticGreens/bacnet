@@ -464,19 +464,19 @@ export function parseValue(
     }
   }
 
-  if (objId === Bacnet.enum.PropertyIdentifier.UNITS) {
-    const unit =
-      typeof resValue === "string"
-        ? resValue
-        : resValue &&
-          Bacnet.enum.getEnumName(Bacnet.enum.EngineeringUnits, resValue);
+  // if (objId === Bacnet.enum.PropertyIdentifier.UNITS) {
+  //   const unit =
+  //     typeof resValue === "string"
+  //       ? resValue
+  //       : resValue &&
+  //         Bacnet.enum.getEnumName(Bacnet.enum.EngineeringUnits, resValue);
 
-    const formattedName = unit && getEngineeringUnitHumanReadable(unit);
+  //   const formattedName = unit && getEngineeringUnitHumanReadable(unit);
 
-    if (formattedName) {
-      resValue = formattedName;
-    }
-  }
+  //   if (formattedName) {
+  //     resValue = formattedName;
+  //   }
+  // }
 
   if (resValue === null || resValue === undefined) {
     resValue = " ";
